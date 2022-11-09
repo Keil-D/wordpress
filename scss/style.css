@@ -1,0 +1,147 @@
+/* Основной файл */
+.page {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+
+  font-family: 'Roboto-Regular';
+  font-stretch: normal;
+  font-size: 15px;
+  color: #fff;
+  background-color: #fff;
+}
+
+.container {
+  margin: auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1160px;
+}
+
+.btn {
+  outline: none;
+  border: 4px solid rgb(0 0 0 / 0.23);
+  border-radius: 10px;
+  width: 313px;
+  height: 72px;
+
+  /* Background fill */
+  box-shadow: inset 0 -5px 0 0 rgb(0 0 0 / 0.18);
+  text-shadow: -0.7px -0.7px 0 rgb(0 0 0 / 0.22);
+  background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+}
+
+.promo__btn-text {
+  font-family: 'RobotoCondensed-Regular';
+  font-stretch: condensed;
+  font-size: 21px;
+  color: #fff;
+}
+
+/* Набор конкретных стилей данного проекта */
+.page-body__title {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* Promo */
+.promo {
+  text-align: center;
+  padding: 39px 0 62px;
+  background: url('../assets/images/bg/main_bg.jpg') center center/cover no-repeat;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.promo-logo {
+  margin-bottom: 53px;
+  font-family: 'Roboto-Medium';
+  max-width: 172px;
+  text-transform: uppercase;
+}
+
+.promo-logo__img {
+  width: 83px;
+  height: 71px;
+  margin-bottom: 14px;
+}
+
+.promo-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 73px;
+}
+
+.promo-offer__title {
+  max-width: 878px;
+  font-family: 'Roboto-Black';
+  font-size: 41px;
+  /* margin: 0 auto; */
+
+  /* line-height: 0.59; */
+  text-transform: uppercase;
+  margin-bottom: 23px;
+  color: #f9bf3b;
+
+}
+
+.promo-offer__subtitle {
+  display: block;
+  font-size: 80px;
+
+  /* line-height: 0.3; */
+  margin-top: 21px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.promo-offer__text {
+  max-width: 1114px;
+  font-family: 'Roboto-Light';
+  font-size: 21px;
+  line-height: 28px;
+  padding: 0 13px;
+  margin-bottom: 73px;
+}
+
+.promo-offer__text strong {
+  font-family: 'Roboto-Bold';
+  text-transform: uppercase;
+  color: #f9bf3b;
+}
+
+.promo-more {
+  max-width: 234px;
+  font-family: 'Roboto-Thin';
+
+  /* line-height: 1.6; */
+  text-transform: uppercase;
+}
+
+.promo-more_img {
+  width: 30px;
+  height: 19px;
+  margin-top: 13px;
+}
